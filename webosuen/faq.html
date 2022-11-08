@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Frequently Asked Questions</title>
+        <link rel="stylesheet" href="style/picnic.min.css">
+        <link rel="stylesheet" type="text/css" href="style/main.css">
+        <!-- <link href="//fonts.googleapis.com/css?family=Exo+2:400,600italic" rel="stylesheet" type="text/css"> -->
+        <link rel="stylesheet" type="text/css" href="style/font.css">
+        <link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <nav id="main-nav">
+            <div class="nav-link">
+                <a href="index.html" class="brand">webosu!</a>
+                <a href="new.html" class="pseudo button">latest</a>
+                <a href="hot.html" class="pseudo button">popular</a>
+                <a href="genre.html" class="pseudo button">genres</a>
+            </div>
+            <div class="nav-search">
+                <form action="search.html">
+                    <input type="text" name="q" placeholder="Search using Names or IDs."/>
+                    <input type="image" class="search-button" src="research.svg">
+                </form>
+            </div>
+            <div class="nav-tool">
+                <a href="local.html" class="pseudo button">favorites</a>
+                <a href="faq.html" class="pseudo button active">faq</a>
+                <a href="settings.html" class="pseudo button">settings</a>
+                <a onclick="document.documentElement.requestFullscreen();" class="pseudo button"><i class="fa fa-window-maximize"></i></a>
+            </div>
+        </nav>
+
+        <div class="main-page" id="main-page">
+            <div class="main-content">
+                <div class="faqentry">
+                    <h2>How do you play osu？</h2>
+                    The default buttons are the left and right mouse buttons and the Z and X keys.
+                    The circles that appear on the game screen are called strike circles. 
+                    When the ring outside the circle shrinks into the circle, click it. 
+                    Some circles are long sliders, you need to hold down click on the circle and follow it to complete the slider. 
+                    When a large blue circle appears on the screen, click and hold the then rapidly spin the cursor around the inside of the circle.
+                </div>
+                <div class="faqentry">
+                    <h2>The cursor seems to be a bit delayed.</h2>
+                    Try enabling the hardware cursor in the settings. The hardware cursor is turned off by default as some browsers or systems may not support it. You can also adjust your audio offset or enter fullscreen if latency is still an issue.
+                </div>
+                <div class="faqentry">
+        			<h2>The game is freezing/slow</h2>
+        			You can attempt to change the resolution by disabling "use system resolution" in  the settings. Make sure you are using a modern browser, such as Firefox or Chromium。
+                </div>
+                <div class="faqentry">
+                    <h2>Nothing is displayed on  the webpage.</h2>
+                    If there is nothing displayed, that could mean the API, <a href="https://osu.sayobot.cn/home/new">Sayobot</a> (Chinese), is offline. Try reloading or checking their status.
+                    <!-- You could also add beatmaps to your favorites, meaning you can access them at any time.-->
+                </div>
+                <div class="faqentry">
+                    <h2>A download manager opened multiple windows</h2>
+                    This site uses XHR, please set up an IDM.
+                </div>
+                <div class="faqentry">
+                    <h2>Can I upload a song locally?</h2>
+                    No, the feature is not implemented yet.
+                    <!-- You can add your own songs in the favorites page  -->
+                </div>
+            </div>
+        </div>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169262247-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169262247-1');
+</script>
+    </body>
+</html>
+
+<!-- attribution -->
+<!-- play icon made by https://www.flaticon.com/authors/those-icons -->
+<!-- search icon made by https://www.flaticon.com/authors/good-ware -->
