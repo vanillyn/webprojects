@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8">
+    <title>Untitled Clicker</title>
+    <!-- Search Engine -->
+    <meta name="description" content="A clicker game, based on a certain coin clicker.">
+    <meta name="image" content="">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Untitled Clicker">
+    <meta itemprop="description" content="A clicker game, based on a certain coin clicker.">
+    <meta itemprop="image" content="">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Untitled Clicker">
+    <meta name="twitter:description" content="A clicker game, based on a certain  coin clicker.">
+    <meta name="twitter:site" content="Vanillyn/julianYaman">
+    <meta name="twitter:image:src" content="">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Untitled Clicker">
+    <meta name="og:description" content="A clicker game, based on a certain coin clicker.">
+    <meta name="og:image" content="">
+    <meta name="og:url" content="https://vanillyn.github.io/webprojects/untitled-clicker">
+    <meta name="og:site_name" content="Untitled Clicker">
+    <meta name="og:type" content="website">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+    <div class="gameFullContent">
+        <div class="leftContainer">
+            <span class="version"></span>
+            <button class="resetButton">end it all!!</button>
+        </div>
+        <div class="mainGameContent">
+            <h1 class="soulAmountDisplay"><span class="soulAmount">0</span> souls</h1>
+            <p class="essenceAmountDisplay"><span class="essenceAmount">0</span> essence</p>
+            <p class="bSecRate"><span class="bSecRateNumber">0</span> souls/sec</p>
+            <img class="soul" src="images/soul-8bit.png">
+        </div>
+        <div class="rightContainer buyItemContainer">
+            <ul class="purchaseList">
+                <li class="purchaseItem" id="item_tier0" data-price="0.0000001" data-bits-per-sec="0.00000001">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">small ember</p>
+                    <p class="itemPrice">0.0000001 souls (10 essence)</p>
+                </li>
+                <li class="purchaseItem" id="item_tier1" data-price="0.00000125" data-bits-per-sec="0.0000001">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">medium ember</p>
+                    <p class="itemPrice">0.00000125 souls (125 essence)</p>
+                </li>
+                <li class="purchaseItem" id="item_tier2" data-price="0.00003" data-bits-per-sec="0.000005">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">large ember</p>
+                    <p class="itemPrice">0.00003 souls (3k essence)</p>
+                </li>
+                <li class="purchaseItem" id="item_tier3" data-price="0.00005" data-bits-per-sec="0.0000075">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">despair spark</p>
+                    <p class="itemPrice">0.00005 souls (5k essence)</p>
+                </li>
+                <li class="purchaseItem" id="item_tier4" data-price="0.0005" data-bits-per-sec="0.000075">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">flame</p>
+                    <p class="itemPrice">0.0005 souls</p>
+                </li>
+                <li class="purchaseItem" id="item_tier5" data-price="0.0015" data-bits-per-sec="0.000175">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">weak essence</p>
+                    <p class="itemPrice">0.0015 souls</p>
+                </li>
+                <li class="purchaseItem" id="item_tier6" data-price="0.0040" data-bits-per-sec="0.000375">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">normal essence</p>
+                    <p class="itemPrice">0.0040 souls</p>
+                </li>
+                <li class="purchaseItem" id="item_tier7" data-price="0.015" data-bits-per-sec="0.00175">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">strong essence</p>
+                    <p class="itemPrice">0.015 souls</p>
+                </li>
+                <li class="purchaseItem" id="item_tier8" data-price="0.05" data-bits-per-sec="0.007">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">powerful essence</p>
+                    <p class="itemPrice">0.05 souls</p>
+                </li>
+                <li class="purchaseItem" id="item_tier9" data-price="0.15" data-bits-per-sec="0.021">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">hopeful essence</p>
+                    <p class="itemPrice">0.15 souls</p>
+                </li>
+                <li class="purchaseItem" id="item_tier10" data-price="1.5" data-bits-per-sec="0.2">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">soul stealer 1.0</p>
+                    <p class="itemPrice">1.5 souls</p>
+                </li>
+                <li class="purchaseItem" id="item_tier11" data-price="250" data-bits-per-sec="25">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">soul stealer 2.5</p>
+                    <p class="itemPrice">250 souls</p>
+                </li>
+                <li class="purchaseItem" id="item_tier12" data-price="5000" data-bits-per-sec="500">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">mini reaper</p>
+                    <p class="itemPrice">5.000 souls</p>
+                </li>
+                <li class="purchaseItem" id="item_tie13r" data-price="245000" data-bits-per-sec="24000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">reaper</p>
+                    <p class="itemPrice">245.000 souls</p>
+                </li>
+                <li class="purchaseItem" id="item_tier14" data-price="2000000" data-bits-per-sec="95000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">large reaper</p>
+                    <p class="itemPrice">2.000.000 souls</p>
+                </li>
+                <li class="purchaseItem" id="item_tier15" data-price="37500000" data-bits-per-sec="675000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">human soul</p>
+                    <p class="itemPrice">75.500.000 souls</p>
+                </li>
+                <li class="purchaseItem" id="item_tier16" data-price="500000000" data-bits-per-sec="80000000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">strong human soul</p>
+                    <p class="itemPrice">975.000.000 souls</p>
+                </li>
+                <li class="purchaseItem" id="item_tier17" data-price="75000000000" data-bits-per-sec="1750000000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">powerful human soul</p>
+                    <p class="itemPrice">750.000.000.000 souls</p>
+                </li>
+                                <li class="purchaseItem" id="item_tier18" data-price="10000000000000" data-bits-per-sec="500000000000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">angelic soul</p>
+                    <p class="itemPrice">10.000.000.000.000 souls</p>
+                </li>
+                                <li class="purchaseItem" id="item_tier19" data-price="975000000000000" data-bits-per-sec="75000000000000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">strong angelic soul</p>
+                    <p class="itemPrice">975.000.000.000.000 souls</p>
+                </li>
+                                <li class="purchaseItem" id="item_tier20" data-price="2450000000000000" data-bits-per-sec="1000000000000000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">pure soul extract</p>
+                    <p class="itemPrice">2.450.000.000.000.000 souls</p>
+                </li>
+                                <li class="purchaseItem" id="item_tier21" data-price="97500000000000000000" data-bits-per-sec="1750000000000000000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">more edgy soul stuff</p>
+                    <p class="itemPrice">97.500.000.000.000.000.000 souls</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script async src="scripts/app.js" type="text/javascript"></script>
+</body>
+</html>
