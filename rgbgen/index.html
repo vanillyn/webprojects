@@ -28,7 +28,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Makinas 4 Flat", sans-serif}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-
+      <!-- warning -->
+      <span class="w3-yellow w3-button w3-hover-white w3-display-topright w3-padding-8" onclick="document.getElementById('warning').style.display='block'"><i class="fa fa-exclamation-triangle"></i> view warning</span>
+      <div class="w3-modal w3-center w3-black" style="background-image: url('https://cdn.upload.systems/uploads/wf6NgGUS.jpg')" id="warning">
+      <span class=" w3-display-center w3-center w3-padding-16 w3-xxlarge w3-text-black">This site is unfinished/under construction. This is an early version. - Vanillyn <span onclick="document.getElementById('warning').style.display='none'"
+      class="w3-button w3-display-topright w3-hover-white w3-large w3-yellow">&times;</span></span>
+    </div>
   <body id="bg" class="container" style="font-family: Quicksand;">
     <a href="https://www.vanillyn.tk"><span class="w3-button w3-display-topleft"><i class="fa fa-arrow-left"> main page</i></span></a>
     <div id="hexColorTemplate" style="display:none;">
